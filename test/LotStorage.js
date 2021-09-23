@@ -1,9 +1,3 @@
-//npm install chai
-//npm install --save-dev chai-bignumber 
-//npm install --save bn.js
-//npm install zeppelin-solidity
-//npm install --save-dev @openzeppelin/test-helpers
-
 const ethers = require('ethers');
 const truffleAssert = require('truffle-assertions');
 const BN = require('bn.js');
