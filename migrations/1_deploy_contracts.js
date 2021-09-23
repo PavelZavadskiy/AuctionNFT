@@ -7,5 +7,4 @@ module.exports = async function(deployer){
 
     }
     await deployer.deploy(LotStorage, process.env.ROPSTEN_INFURA_TOKEN20);
-    //await deployer.deploy(LotStorage, token20.address); //???
 }
