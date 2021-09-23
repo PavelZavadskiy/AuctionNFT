@@ -46,10 +46,10 @@ contract("LotStorage", async accounts =>{
         console.log( `Owner token721 address: ${await token721.ownerOf(lotNftId)}` );
         console.log( `Accounts[0] address: ${accounts[0]}` );
 
-/*        console.log( "Approve token ERC721:" );
+        console.log( "Approve token ERC721:" );
         await token721.approve(lotStorageContract.address, lotNftId);
         let approveAddress = await token721.getApproved(lotNftId);
-        console.log( `Approved address: ${approveAddress} \n` );*/
+        console.log( `Approved address: ${approveAddress} \n` );
        
         //await lotStorageContract.configAuction(token20.address);       
     } );
@@ -358,9 +358,9 @@ contract("LotStorage", async accounts =>{
 
         let current = await time.latestBlock();
 
-        await time.advanceBlockTo(current+150);
-        current = current = await time.latestBlock();
-        console.log(`Current after block: ${current}`);
+        //await time.advanceBlockTo(current+150);
+        //current = current = await time.latestBlock();
+        //console.log(`Current after block: ${current}`);
 
         current = await time.latestBlock();
         console.log(`Current block: ${current}`);
